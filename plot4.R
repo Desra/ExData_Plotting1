@@ -92,7 +92,7 @@ legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), bty 
 message("... Creating 4th plot at bottom right screen ...")
 plot(new_power_data$DateTime, new_power_data$Global_reactive_power, cex=0.95, type="l", ylab="Global_reactive_power", xlab="datetime")
 
-#11. Closing PNG device to generate PNG file containing the plot
+#13. Closing PNG device to generate PNG file containing the plot
 
 message("... Closing graphics device to complete PNG file creation  ...")
 dev.off()
