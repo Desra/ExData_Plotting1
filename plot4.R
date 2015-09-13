@@ -67,19 +67,19 @@ png(file="plot4.png", width=480, height=480)
 
 par(mfrow=c(2,2))
 
-#9. Create 1st plot on top left screen
+#9. Create 1st plot at top left screen
 
 message("... Creating 1st plot at top left screen ...")
 plot(new_power_data$DateTime, new_power_data$Global_active_power, type="l", xlab="",  ylab="Global Active Power")
 
 
-#10. Create 2nd plot on top right screen
+#10. Create 2nd plot at top right screen
 
 message("... Creating 2nd plot at top right screen ...")
 plot(new_power_data$DateTime, new_power_data$Voltage, type="l", ylab="Voltage", xlab="datetime")
 
 
-#11. Create 3rd plot on bottom left screen
+#11. Create 3rd plot at bottom left screen (removed legend border)
 
 message("... Creating 3rd plot at bottom left screen ...")
 plot(new_power_data$DateTime, new_power_data$Sub_metering_1, type="l", xlab="", ylab="Energy sub metering", col="black")
