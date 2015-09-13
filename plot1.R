@@ -22,9 +22,9 @@ power_data <- read.table(filename, header = TRUE, sep = ";", na.strings="?")
 message("... Loading data ... Complete!")
 
 
-#4. Subset data for dates between 01/02/2007 to 02/07/2007
+#4. Subset data for dates between 2007-02-01 to 2007-02-02
 
-message("... Searching and subsetting data for dates between 01/02/2007 to 02/07/2007 ...")
+message("... Searching and subsetting data for dates between 2007-02-01 to 2007-02-02 ...")
 selected_power_data <- subset(power_data, power_data$Date=="1/2/2007" | power_data$Date== "2/2/2007")
 
 
